@@ -12,19 +12,24 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber
 public class CommonProxy {
   public void preInit(FMLPreInitializationEvent e) {
+    System.out.println("common proxy: preInit");
   }
 
   public void init(FMLInitializationEvent e) {
+    System.out.println("common proxy: init");
   }
 
   public void postInit(FMLPostInitializationEvent e) {
+    System.out.println("common proxy: postInit");
   }
 
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {
+    System.out.println("common proxy: registerBlocks");
   }
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
+    System.out.println("common proxy: registerItems");
   }
 }
