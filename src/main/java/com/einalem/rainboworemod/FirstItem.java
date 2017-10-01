@@ -1,4 +1,4 @@
-package com.einalem.unicornmod;
+package com.einalem.rainboworemod;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -10,7 +10,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class FirstItem extends Item {
   public FirstItem() {
     setRegistryName("firstitem");        // The unique name (within your mod) that identifies this item
-    setUnlocalizedName(UnicornMod.MODID + ".firstitem");     // Used for localization (en_US.lang)
+    setUnlocalizedName(RainbowOreMod.MODID + ".firstitem");     // Used for localization (en_US.lang)
     setCreativeTab(CreativeTabs.MISC);
   }
 

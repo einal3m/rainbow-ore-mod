@@ -1,4 +1,4 @@
-package com.einalem.unicornmod;
+package com.einalem.rainboworemod;
 
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;

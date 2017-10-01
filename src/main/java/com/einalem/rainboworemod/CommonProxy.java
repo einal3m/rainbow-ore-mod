@@ -1,4 +1,4 @@
-package com.einalem.unicornmod;
+package com.einalem.rainboworemod;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

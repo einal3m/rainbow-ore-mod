@@ -1,8 +1,8 @@
 [
 {
-  "modid": "unicornmod",
-  "name": "Unicorn Mod",
-  "description": "Einalem's Unicorn Mod",
+  "modid": "rainboworemod",
+  "name": "Rainbow Ore Mod",
+  "description": "Einalem's Rainbow Ore Mod",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

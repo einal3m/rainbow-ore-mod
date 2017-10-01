@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "unicornmod:items/firstitem"
+    "layer0": "rainboworemod:items/firstitem"
   }
 }

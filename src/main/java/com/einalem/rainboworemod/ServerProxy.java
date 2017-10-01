@@ -1,4 +1,4 @@
-package com.einalem.unicornmod;
+package com.einalem.rainboworemod;
 
 public class ServerProxy extends CommonProxy {
 
