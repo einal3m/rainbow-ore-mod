@@ -2,6 +2,7 @@ package com.einalem.unicornmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -26,10 +27,17 @@ public class CommonProxy {
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {
     System.out.println("common proxy: registerBlocks");
+    event.getRegistry().register(new FirstBlock());
   }
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
     System.out.println("common proxy: registerItems");
+    event.getRegistry().register(
+        new ItemBlock(ModBlocks.firstBlock).setRegistryName(ModBlocks.firstBlock.getRegistryName())
+    );
+
+    event.getRegistry().register(new FirstItem());
+
   }
 }
