@@ -1,4 +1,4 @@
-package com.einalem.rainboworemod;
+package com.einalem.rainboworemod.proxy;
 
 public class ServerProxy extends CommonProxy {
 

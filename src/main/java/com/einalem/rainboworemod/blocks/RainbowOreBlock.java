@@ -1,5 +1,6 @@
-package com.einalem.rainboworemod;
+package com.einalem.rainboworemod.blocks;
 
+import com.einalem.rainboworemod.RainbowOreMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;

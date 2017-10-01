@@ -1,5 +1,6 @@
 package com.einalem.rainboworemod;
 
+import com.einalem.rainboworemod.proxy.CommonProxy;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -15,7 +16,7 @@ public class RainbowOreMod
   public static final String VERSION = "1.0";
   public static final String MODNAME = "Rainbow Ore Mod";
 
-  @SidedProxy(clientSide = "com.einalem.rainboworemod.ClientProxy", serverSide = "com.einalem.rainboworemod.ServerProxy")
+  @SidedProxy(clientSide = "com.einalem.rainboworemod.proxy.ClientProxy", serverSide = "com.einalem.rainboworemod.proxy.ServerProxy")
   public static CommonProxy proxy;
 
   @Mod.Instance

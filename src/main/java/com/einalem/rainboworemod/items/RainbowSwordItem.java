@@ -1,5 +1,6 @@
-package com.einalem.rainboworemod;
+package com.einalem.rainboworemod.items;
 
+import com.einalem.rainboworemod.RainbowOreMod;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

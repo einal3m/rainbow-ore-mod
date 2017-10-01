@@ -1,5 +1,7 @@
-package com.einalem.rainboworemod;
+package com.einalem.rainboworemod.proxy;
 
+import com.einalem.rainboworemod.ModBlocks;
+import com.einalem.rainboworemod.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

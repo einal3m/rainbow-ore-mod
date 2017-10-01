@@ -1,5 +1,8 @@
-package com.einalem.rainboworemod;
+package com.einalem.rainboworemod.proxy;
 
+import com.einalem.rainboworemod.ModBlocks;
+import com.einalem.rainboworemod.blocks.RainbowOreBlock;
+import com.einalem.rainboworemod.items.RainbowSwordItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
