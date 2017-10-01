@@ -27,17 +27,17 @@ public class CommonProxy {
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {
     System.out.println("common proxy: registerBlocks");
-    event.getRegistry().register(new FirstBlock());
+    event.getRegistry().register(new RainbowOreBlock());
   }
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
     System.out.println("common proxy: registerItems");
     event.getRegistry().register(
-        new ItemBlock(ModBlocks.firstBlock).setRegistryName(ModBlocks.firstBlock.getRegistryName())
+        new ItemBlock(ModBlocks.rainbowOreBlock).setRegistryName(ModBlocks.rainbowOreBlock.getRegistryName())
     );
 
-    event.getRegistry().register(new FirstItem());
+    event.getRegistry().register(new RainbowSwordItem());
 
   }
 }

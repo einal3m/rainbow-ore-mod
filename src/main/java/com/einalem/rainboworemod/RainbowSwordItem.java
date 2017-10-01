@@ -7,10 +7,10 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class FirstItem extends Item {
-  public FirstItem() {
-    setRegistryName("firstitem");        // The unique name (within your mod) that identifies this item
-    setUnlocalizedName(RainbowOreMod.MODID + ".firstitem");     // Used for localization (en_US.lang)
+public class RainbowSwordItem extends Item {
+  public RainbowSwordItem() {
+    setRegistryName("rainbow_sword");        // The unique name (within your mod) that identifies this item
+    setUnlocalizedName(RainbowOreMod.MODID + ".rainbow_sword");     // Used for localization (en_US.lang)
     setCreativeTab(CreativeTabs.MISC);
   }
 

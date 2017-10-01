@@ -9,11 +9,11 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class FirstBlock extends Block {
-  public FirstBlock() {
+public class RainbowOreBlock extends Block {
+  public RainbowOreBlock() {
     super(Material.ROCK);
-    setUnlocalizedName(RainbowOreMod.MODID + ".firstblock");     // Used for localization (en_US.lang)
-    setRegistryName("firstblock");        // The unique name (within your mod) that identifies this block
+    setUnlocalizedName(RainbowOreMod.MODID + ".rainbow_ore");     // Used for localization (en_US.lang)
+    setRegistryName("rainbow_ore");        // The unique name (within your mod) that identifies this block
     setCreativeTab(CreativeTabs.MISC);
   }
 

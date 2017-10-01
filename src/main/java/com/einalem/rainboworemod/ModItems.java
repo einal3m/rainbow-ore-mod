@@ -5,12 +5,12 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModItems {
-  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":firstitem")
-  public static FirstItem firstItem;
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":rainbow_sword")
+  public static RainbowSwordItem rainbowSwordItem;
 
 
   @SideOnly(Side.CLIENT)
   public static void initModels() {
-    firstItem.initModel();
+    rainbowSwordItem.initModel();
   }
 }
