@@ -2,6 +2,7 @@ package com.einalem.rainboworemod.proxy;
 
 import com.einalem.rainboworemod.ModBlocks;
 import com.einalem.rainboworemod.blocks.RainbowOreBlock;
+import com.einalem.rainboworemod.items.RainbowIngotItem;
 import com.einalem.rainboworemod.items.RainbowSwordItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -41,6 +42,6 @@ public class CommonProxy {
     );
 
     event.getRegistry().register(new RainbowSwordItem());
-
+    event.getRegistry().register(new RainbowIngotItem());
   }
 }
