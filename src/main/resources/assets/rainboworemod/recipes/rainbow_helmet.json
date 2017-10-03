@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "rainboworemod:rainbow_ingot"
+    }
+  },
+  "result": {
+    "item": "rainboworemod:rainbow_helmet"
+  }
+}

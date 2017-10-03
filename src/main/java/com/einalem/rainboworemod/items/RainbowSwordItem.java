@@ -2,17 +2,17 @@ package com.einalem.rainboworemod.items;
 
 import com.einalem.rainboworemod.RainbowOreMod;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class RainbowSwordItem extends Item {
-  public RainbowSwordItem() {
-    setRegistryName("rainbow_sword");        // The unique name (within your mod) that identifies this item
-    setUnlocalizedName(RainbowOreMod.MODID + ".rainbow_sword");     // Used for localization (en_US.lang)
-    setCreativeTab(CreativeTabs.MISC);
+public class RainbowSwordItem extends ItemSword {
+  public RainbowSwordItem(Item.ToolMaterial material) {
+    super(material);
+    setRegistryName("rainbow_sword");
+    setUnlocalizedName(RainbowOreMod.MODID + ".rainbow_sword");
   }
 
   @SideOnly(Side.CLIENT)

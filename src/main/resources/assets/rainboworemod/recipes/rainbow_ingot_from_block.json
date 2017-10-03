@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "rainbow_ingot",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "rainboworemod:rainbow_block"
+    }
+  },
+  "result": {
+    "item": "rainboworemod:rainbow_ingot",
+    "count": 9
+  }
+}

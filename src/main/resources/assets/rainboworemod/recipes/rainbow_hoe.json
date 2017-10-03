@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "rainboworemod:rainbow_ingot"
+    }
+  },
+  "result": {
+    "item": "rainboworemod:rainbow_hoe"
+  }
+}

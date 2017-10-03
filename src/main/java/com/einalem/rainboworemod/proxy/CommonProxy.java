@@ -7,6 +7,7 @@ import com.einalem.rainboworemod.items.RainbowSwordItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -41,7 +42,9 @@ public class CommonProxy {
         new ItemBlock(ModBlocks.rainbowOreBlock).setRegistryName(ModBlocks.rainbowOreBlock.getRegistryName())
     );
 
-    event.getRegistry().register(new RainbowSwordItem());
+    EnumHelper.addToolMaterial("RAINBOW", 4, 1500, 8.0F, 4.0F, 25);
+
+    event.getRegistry().register(new RainbowSwordItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowIngotItem());
   }
 }
