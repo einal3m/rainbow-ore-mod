@@ -3,10 +3,7 @@ package com.einalem.rainboworemod.proxy;
 import com.einalem.rainboworemod.ModBlocks;
 import com.einalem.rainboworemod.blocks.RainbowBlock;
 import com.einalem.rainboworemod.blocks.RainbowOreBlock;
-import com.einalem.rainboworemod.items.RainbowAxeItem;
-import com.einalem.rainboworemod.items.RainbowIngotItem;
-import com.einalem.rainboworemod.items.RainbowShovelItem;
-import com.einalem.rainboworemod.items.RainbowSwordItem;
+import com.einalem.rainboworemod.items.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -54,8 +51,7 @@ public class CommonProxy {
 
     event.getRegistry().register(new RainbowSwordItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowShovelItem(Item.ToolMaterial.valueOf("RAINBOW")));
-    // spade
-    // hoe
+    event.getRegistry().register(new RainbowHoeItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowAxeItem(Item.ToolMaterial.valueOf("RAINBOW")));
 
     event.getRegistry().register(new RainbowIngotItem());
