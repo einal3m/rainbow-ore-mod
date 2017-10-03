@@ -2,6 +2,7 @@ package com.einalem.rainboworemod;
 
 import com.einalem.rainboworemod.items.RainbowAxeItem;
 import com.einalem.rainboworemod.items.RainbowIngotItem;
+import com.einalem.rainboworemod.items.RainbowShovelItem;
 import com.einalem.rainboworemod.items.RainbowSwordItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -17,6 +18,9 @@ public class ModItems {
   @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowIngotItem.REGISTRY_NAME)
   public static RainbowIngotItem rainbowIngotItem;
 
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowShovelItem.REGISTRY_NAME)
+  public static RainbowShovelItem rainbowShovelItem;
+
   @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowAxeItem.REGISTRY_NAME)
   public static RainbowAxeItem rainbowAxeItem;
 
@@ -24,6 +28,7 @@ public class ModItems {
   public static void initModels() {
     initModel(rainbowIngotItem);
     initModel(rainbowSwordItem);
+    initModel(rainbowShovelItem);
     initModel(rainbowAxeItem);
   }
 

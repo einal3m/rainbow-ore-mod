@@ -5,6 +5,7 @@ import com.einalem.rainboworemod.blocks.RainbowBlock;
 import com.einalem.rainboworemod.blocks.RainbowOreBlock;
 import com.einalem.rainboworemod.items.RainbowAxeItem;
 import com.einalem.rainboworemod.items.RainbowIngotItem;
+import com.einalem.rainboworemod.items.RainbowShovelItem;
 import com.einalem.rainboworemod.items.RainbowSwordItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -52,6 +53,7 @@ public class CommonProxy {
     EnumHelper.addToolMaterial("RAINBOW", 4, 1500, 8.0F, 4.0F, 25);
 
     event.getRegistry().register(new RainbowSwordItem(Item.ToolMaterial.valueOf("RAINBOW")));
+    event.getRegistry().register(new RainbowShovelItem(Item.ToolMaterial.valueOf("RAINBOW")));
     // spade
     // hoe
     event.getRegistry().register(new RainbowAxeItem(Item.ToolMaterial.valueOf("RAINBOW")));

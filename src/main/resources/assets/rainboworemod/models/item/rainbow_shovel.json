@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "rainboworemod:items/rainbow_shovel"
+  }
+}
