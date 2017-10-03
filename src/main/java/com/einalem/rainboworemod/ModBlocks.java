@@ -1,16 +1,29 @@
 package com.einalem.rainboworemod;
 
 import com.einalem.rainboworemod.blocks.RainbowOreBlock;
+import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModBlocks {
-  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":rainbow_ore")
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowOreBlock.REGISTRY_NAME)
   public static RainbowOreBlock rainbowOreBlock;
 
   @SideOnly(Side.CLIENT)
   public static void initModels() {
-    rainbowOreBlock.initModel();
+    initModel(rainbowOreBlock);
+  }
+
+  @SideOnly(Side.CLIENT)
+  private static void initModel(Block block) {
+    ModelLoader.setCustomModelResourceLocation(
+      Item.getItemFromBlock(block),
+      0,
+      new ModelResourceLocation(block.getRegistryName(), "inventory")
+    );
   }
 }
