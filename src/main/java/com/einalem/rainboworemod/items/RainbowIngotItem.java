@@ -8,7 +8,7 @@ public class RainbowIngotItem extends Item {
   public static final String REGISTRY_NAME = "rainbow_ingot";
 
   public RainbowIngotItem() {
-    setRegistryName("rainbow_ingot");
+    setRegistryName(REGISTRY_NAME);
     setUnlocalizedName(RainbowOreMod.MODID + "." + REGISTRY_NAME);
     setCreativeTab(CreativeTabs.MISC);
   }

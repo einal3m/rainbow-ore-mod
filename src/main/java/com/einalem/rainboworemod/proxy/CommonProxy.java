@@ -1,6 +1,7 @@
 package com.einalem.rainboworemod.proxy;
 
 import com.einalem.rainboworemod.ModBlocks;
+import com.einalem.rainboworemod.blocks.RainbowBlock;
 import com.einalem.rainboworemod.blocks.RainbowOreBlock;
 import com.einalem.rainboworemod.items.RainbowIngotItem;
 import com.einalem.rainboworemod.items.RainbowSwordItem;
@@ -33,13 +34,18 @@ public class CommonProxy {
   public static void registerBlocks(RegistryEvent.Register<Block> event) {
     System.out.println("common proxy: registerBlocks");
     event.getRegistry().register(new RainbowOreBlock());
+    event.getRegistry().register(new RainbowBlock());
   }
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
     System.out.println("common proxy: registerItems");
+
     event.getRegistry().register(
         new ItemBlock(ModBlocks.rainbowOreBlock).setRegistryName(ModBlocks.rainbowOreBlock.getRegistryName())
+    );
+    event.getRegistry().register(
+        new ItemBlock(ModBlocks.rainbowBlock).setRegistryName(ModBlocks.rainbowBlock.getRegistryName())
     );
 
     EnumHelper.addToolMaterial("RAINBOW", 4, 1500, 8.0F, 4.0F, 25);

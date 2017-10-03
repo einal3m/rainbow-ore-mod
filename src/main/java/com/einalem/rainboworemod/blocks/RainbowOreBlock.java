@@ -11,7 +11,7 @@ public class RainbowOreBlock extends Block {
   public RainbowOreBlock() {
     super(Material.ROCK);
     setUnlocalizedName(RainbowOreMod.MODID + "." + REGISTRY_NAME);
-    setRegistryName("rainbow_ore");
+    setRegistryName(REGISTRY_NAME);
     setCreativeTab(CreativeTabs.MISC);
   }
 }
