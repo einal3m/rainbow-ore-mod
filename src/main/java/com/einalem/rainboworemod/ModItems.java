@@ -21,6 +21,9 @@ public class ModItems {
   @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowHoeItem.REGISTRY_NAME)
   public static RainbowHoeItem rainbowHoeItem;
 
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowPickaxeItem.REGISTRY_NAME)
+  public static RainbowPickaxeItem rainbowPickaxeItem;
+
   @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowAxeItem.REGISTRY_NAME)
   public static RainbowAxeItem rainbowAxeItem;
 
@@ -30,6 +33,7 @@ public class ModItems {
     initModel(rainbowSwordItem);
     initModel(rainbowShovelItem);
     initModel(rainbowHoeItem);
+    initModel(rainbowPickaxeItem);
     initModel(rainbowAxeItem);
   }
 

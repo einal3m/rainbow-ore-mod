@@ -52,6 +52,7 @@ public class CommonProxy {
     event.getRegistry().register(new RainbowSwordItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowShovelItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowHoeItem(Item.ToolMaterial.valueOf("RAINBOW")));
+    event.getRegistry().register(new RainbowPickaxeItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowAxeItem(Item.ToolMaterial.valueOf("RAINBOW")));
 
     event.getRegistry().register(new RainbowIngotItem());
