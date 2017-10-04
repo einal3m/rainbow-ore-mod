@@ -1,6 +1,7 @@
 package com.einalem.rainboworemod.proxy;
 
 import com.einalem.rainboworemod.ModBlocks;
+import com.einalem.rainboworemod.ModItems;
 import com.einalem.rainboworemod.blocks.RainbowBlock;
 import com.einalem.rainboworemod.blocks.RainbowOreBlock;
 import com.einalem.rainboworemod.items.*;
@@ -8,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -15,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
@@ -24,6 +27,7 @@ public class CommonProxy {
 
   public void init(FMLInitializationEvent e) {
     System.out.println("common proxy: init");
+    GameRegistry.addSmelting(ModBlocks.rainbowOreBlock, new ItemStack(ModItems.rainbowIngotItem), 1.0F);
   }
 
   public void postInit(FMLPostInitializationEvent e) {
