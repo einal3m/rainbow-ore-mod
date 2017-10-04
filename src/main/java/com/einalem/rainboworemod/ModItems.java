@@ -27,14 +27,34 @@ public class ModItems {
   @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowAxeItem.REGISTRY_NAME)
   public static RainbowAxeItem rainbowAxeItem;
 
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowHelmItem.REGISTRY_NAME)
+  public static RainbowHelmItem rainbowHelmItem;
+
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowChestplateItem.REGISTRY_NAME)
+  public static RainbowChestplateItem rainbowChestplateItem;
+
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowLeggingsItem.REGISTRY_NAME)
+  public static RainbowLeggingsItem rainbowLeggingsItem;
+
+  @GameRegistry.ObjectHolder(RainbowOreMod.MODID + ":" + RainbowBootsItem.REGISTRY_NAME)
+  public static RainbowBootsItem rainbowBootsItem;
+
   @SideOnly(Side.CLIENT)
   public static void initModels() {
+    System.out.println("Register rainbow models");
+
     initModel(rainbowIngotItem);
+
     initModel(rainbowSwordItem);
     initModel(rainbowShovelItem);
     initModel(rainbowHoeItem);
     initModel(rainbowPickaxeItem);
     initModel(rainbowAxeItem);
+
+    initModel(rainbowHelmItem);
+    initModel(rainbowChestplateItem);
+    initModel(rainbowLeggingsItem);
+    initModel(rainbowBootsItem);
   }
 
   @SideOnly(Side.CLIENT)

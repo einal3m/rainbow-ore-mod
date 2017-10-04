@@ -5,6 +5,7 @@ import com.einalem.rainboworemod.blocks.RainbowBlock;
 import com.einalem.rainboworemod.blocks.RainbowOreBlock;
 import com.einalem.rainboworemod.items.*;
 import net.minecraft.block.Block;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.util.EnumHelper;
@@ -31,14 +32,14 @@ public class CommonProxy {
 
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {
-    System.out.println("common proxy: registerBlocks");
+    System.out.println("Register rainbow blocks");
     event.getRegistry().register(new RainbowOreBlock());
     event.getRegistry().register(new RainbowBlock());
   }
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
-    System.out.println("common proxy: registerItems");
+    System.out.println("Register rainbow items");
 
     event.getRegistry().register(
         new ItemBlock(ModBlocks.rainbowOreBlock).setRegistryName(ModBlocks.rainbowOreBlock.getRegistryName())
@@ -54,6 +55,13 @@ public class CommonProxy {
     event.getRegistry().register(new RainbowHoeItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowPickaxeItem(Item.ToolMaterial.valueOf("RAINBOW")));
     event.getRegistry().register(new RainbowAxeItem(Item.ToolMaterial.valueOf("RAINBOW")));
+
+    EnumHelper.addArmorMaterial("RAINBOW", "rainbow", 40, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
+
+    event.getRegistry().register(new RainbowHelmItem());
+    event.getRegistry().register(new RainbowChestplateItem());
+    event.getRegistry().register(new RainbowLeggingsItem());
+    event.getRegistry().register(new RainbowBootsItem());
 
     event.getRegistry().register(new RainbowIngotItem());
   }
