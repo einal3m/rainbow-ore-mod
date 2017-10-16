@@ -1,6 +1,9 @@
 {
-  "parent": "block/cube_all",
+  "parent": "rainboworemod:block/cube_mirrored_sides",
   "textures": {
-    "all": "rainboworemod:blocks/rainbow_block"
+    "up": "rainboworemod:blocks/rainbow_block",
+    "down": "rainboworemod:blocks/rainbow_block",
+    "north_west": "rainboworemod:blocks/rainbow_block_nw_side",
+    "south_east": "rainboworemod:blocks/rainbow_block_se_side"
   }
 }

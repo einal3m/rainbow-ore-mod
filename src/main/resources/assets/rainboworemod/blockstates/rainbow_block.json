@@ -1,5 +1,8 @@
 {
   "variants": {
-    "normal": { "model": "rainboworemod:rainbow_block" }
+    "facing=north": { "model": "rainboworemod:rainbow_block" },
+    "facing=east":  { "model": "rainboworemod:rainbow_block", "y": 90 },
+    "facing=south": { "model": "rainboworemod:rainbow_block", "y": 180 },
+    "facing=west":  { "model": "rainboworemod:rainbow_block", "y": 270 }
   }
 }
