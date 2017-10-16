@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rainbow_ingot",
+  "pattern": [
+    "gbB",
+    "yIp",
+    "ork"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "g": {
+      "type": "forge:ore_dict",
+      "ore": "gemEmerald"
+    },
+    "b": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "gemLapis"
+    },
+    "y": {
+      "type": "forge:ore_dict",
+      "ore": "dyeYellow"
+    },
+    "p": {
+      "type": "forge:ore_dict",
+      "ore": "dyePurple"
+    },
+    "o": {
+      "type": "forge:ore_dict",
+      "ore": "dyeOrange"
+    },
+    "r": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "k": {
+      "type": "forge:ore_dict",
+      "ore": "dyePink"
+    }
+  },
+  "result": {
+    "item": "rainbowore:rainbow_ingot"
+  }
+}

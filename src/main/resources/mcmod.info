@@ -1,7 +1,7 @@
 [
 {
-  "modid": "rainboworemod",
-  "name": "Rainbow Ore Mod",
+  "modid": "rainbowore",
+  "name": "Rainbow Ore",
   "description": "Einalem's Rainbow Ore Mod",
   "version": "${version}",
   "mcversion": "${mcversion}",

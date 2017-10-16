@@ -1,0 +1,9 @@
+{
+  "parent": "rainbowore:block/cube_mirrored_sides",
+  "textures": {
+    "up": "rainbowore:blocks/rainbow_block",
+    "down": "rainbowore:blocks/rainbow_block",
+    "north_west": "rainbowore:blocks/rainbow_block_nw_side",
+    "south_east": "rainbowore:blocks/rainbow_block_se_side"
+  }
+}

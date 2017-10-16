@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "rainbowore:rainbow_ingot"
+    }
+  },
+  "result": {
+    "item": "rainbowore:rainbow_chestplate"
+  }
+}

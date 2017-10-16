@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "rainbowore:rainbow_block" },
+    "facing=east":  { "model": "rainbowore:rainbow_block", "y": 90 },
+    "facing=south": { "model": "rainbowore:rainbow_block", "y": 180 },
+    "facing=west":  { "model": "rainbowore:rainbow_block", "y": 270 }
+  }
+}

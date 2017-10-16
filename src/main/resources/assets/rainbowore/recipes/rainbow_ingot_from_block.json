@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rainbow_ingot",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "rainbowore:rainbow_block"
+    }
+  },
+  "result": {
+    "item": "rainbowore:rainbow_ingot",
+    "count": 9
+  }
+}

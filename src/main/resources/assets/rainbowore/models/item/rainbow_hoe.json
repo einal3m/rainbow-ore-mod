@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "rainbowore:items/rainbow_hoe"
+  }
+}
