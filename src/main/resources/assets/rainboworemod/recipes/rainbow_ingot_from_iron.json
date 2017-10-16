@@ -7,15 +7,42 @@
     "ork"
   ],
   "key": {
-    "I": { "item": "minecraft:iron_ingot" },
-    "g": { "item": "minecraft:emerald" },
-    "b": { "item": "minecraft:diamond" },
-    "B": { "item": "minecraft:dye", "data": 4 },
-    "y": { "item": "minecraft:dye", "data": 11 },
-    "p": { "item": "minecraft:dye", "data": 5 },
-    "o": { "item": "minecraft:dye", "data": 14 },
-    "r": { "item": "minecraft:redstone" },
-    "k": { "item": "minecraft:dye", "data": 9 }
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "g": {
+      "type": "forge:ore_dict",
+      "ore": "gemEmerald"
+    },
+    "b": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "gemLapis"
+    },
+    "y": {
+      "type": "forge:ore_dict",
+      "ore": "dyeYellow"
+    },
+    "p": {
+      "type": "forge:ore_dict",
+      "ore": "dyePurple"
+    },
+    "o": {
+      "type": "forge:ore_dict",
+      "ore": "dyeOrange"
+    },
+    "r": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "k": {
+      "type": "forge:ore_dict",
+      "ore": "dyePink"
+    }
   },
   "result": {
     "item": "rainboworemod:rainbow_ingot"
