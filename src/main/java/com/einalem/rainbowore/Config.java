@@ -15,20 +15,21 @@ public class Config {
   public static int oreVeinSize = 6;
 
   public static void readConfig() {
-    Configuration cfg = CommonProxy.config;
+    Configuration config = CommonProxy.config;
     try {
-      cfg.load();
-      initGeneralConfig(cfg);
+      config.load();
+      initOreGenerationConfig(config);
+      adjustMinAndMax();
     } catch (Exception e1) {
       RainbowOreMod.logger.log(Level.ERROR, "Problem loading config file!", e1);
     } finally {
-      if (cfg.hasChanged()) {
-        cfg.save();
+      if (config.hasChanged()) {
+        config.save();
       }
     }
   }
 
-  private static void initGeneralConfig(Configuration cfg) {
+  private static void initOreGenerationConfig(Configuration cfg) {
     cfg.addCustomCategoryComment(CATEGORY_ORE_GEN, "Overworld ore generation configuration");
 
     oreGenerationEnabled = cfg.getBoolean("rainbowOreWorldGenEnabled", CATEGORY_ORE_GEN, oreGenerationEnabled, "Enable world generation of rainbow ore");
@@ -36,5 +37,14 @@ public class Config {
     oreMaxHeight = cfg.getInt("rainbowOreMaxHeight", CATEGORY_ORE_GEN, oreMaxHeight, 0, 256, "Maximum height (Y coordinate) in the world to generate rainbow ore");
     oreVeinsPerChunk = cfg.getInt("rainbowOreVeinsPerChunk", CATEGORY_ORE_GEN, oreVeinsPerChunk, 0, 100, "How many times can a rainbow ore vein spawn in each chunk");
     oreVeinSize = cfg.getInt("rainbowOreVeinSize", CATEGORY_ORE_GEN, oreVeinSize, 0, 100, "How many rainbow ore in each vein");
+  }
+
+  private static void adjustMinAndMax() {
+    if (oreMaxHeight < oreMinHeight)
+    {
+      int i = oreMinHeight;
+      oreMinHeight = oreMaxHeight;
+      oreMaxHeight = i;
+    }
   }
 }

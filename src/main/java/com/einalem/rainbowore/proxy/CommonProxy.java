@@ -7,6 +7,7 @@ import com.einalem.rainbowore.RainbowOreMod;
 import com.einalem.rainbowore.blocks.RainbowBlock;
 import com.einalem.rainbowore.blocks.RainbowOreBlock;
 import com.einalem.rainbowore.items.*;
+import com.einalem.rainbowore.worldgen.RainbowOreWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
@@ -32,13 +33,16 @@ public class CommonProxy {
     RainbowOreMod.logger.log(Level.INFO, "Load config file");
     config = new Configuration(e.getSuggestedConfigurationFile());
     Config.readConfig();
-
-    //    GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
   }
 
   public void init(FMLInitializationEvent e) {
     RainbowOreMod.logger.log(Level.INFO, "Add smelting recipes");
     GameRegistry.addSmelting(ModBlocks.rainbowOreBlock, new ItemStack(ModItems.rainbowIngotItem), 1.0F);
+
+    if (Config.oreGenerationEnabled) {
+      RainbowOreMod.logger.log(Level.INFO, "Register rainbow ore gen");
+      GameRegistry.registerWorldGenerator(new RainbowOreWorldGenerator(), 3);
+    }
   }
 
   public void postInit(FMLPostInitializationEvent e) {
