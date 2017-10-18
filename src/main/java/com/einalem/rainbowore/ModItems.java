@@ -41,8 +41,6 @@ public class ModItems {
 
   @SideOnly(Side.CLIENT)
   public static void initModels() {
-    System.out.println("Register rainbow models");
-
     initModel(rainbowIngotItem);
 
     initModel(rainbowSwordItem);

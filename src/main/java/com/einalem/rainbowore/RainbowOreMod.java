@@ -1,7 +1,6 @@
 package com.einalem.rainbowore;
 
 import com.einalem.rainbowore.proxy.CommonProxy;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -33,7 +32,6 @@ public class RainbowOreMod
   @Mod.EventHandler
   public void init(FMLInitializationEvent e) {
     proxy.init(e);
-    System.out.println("DIRT BLOCK >> "+Blocks.DIRT.getUnlocalizedName());
   }
 
   @Mod.EventHandler
